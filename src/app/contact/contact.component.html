@@ -1,0 +1,74 @@
+<!-- ***** Contact Us Start ***** -->
+<section class="section colored" id="contact-us">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">Échanos un mail.</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Nuestro equipo de atención al cliente se comunicará de inmediato contigo, proporciona tu información de contacto.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <!-- ***** Contact Text Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="margin-bottom-30">Nos puedes localizar en:</h5>
+                <div class="contact-text">
+                    <p>Segunda cerrada de Monera #6, San Vicente Chicoloapan, Estado de México.
+                    </p>
+                    
+                </div>
+            </div>
+            <!-- ***** Contact Text End ***** -->
+
+            <!-- ***** Contact Form Start ***** -->
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="contact-form">
+                    <form (ngSubmit)="contactForm(appData.value)" #appData="ngForm">
+                        <div class="row form-group">
+                            <div class="col-lg-6 col-md-12 col-sm-12 ">
+                                <fieldset>
+                                    <input name="nombre" type="text" class="form-control" 
+                                        placeholder="Nombre Completo"  required="true" ngModel>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" 
+                                        placeholder="E-Mail" required="true" ngModel>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="celphone" type="text" class="form-control" placeholder="Telefóno Móvil" required="true" ngModel>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="mensaje" rows="6" class="form-control" 
+                                        placeholder="Platícanos sobre tu negocio." required="true" ngModel></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" 
+                                    class="main-button">Enviar</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ***** Contact Form End ***** -->
+        </div>
+    </div>
+</section>
+<!-- ***** Contact Us End ***** -->

@@ -23,9 +23,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
@@ -117,8 +115,13 @@
               "devServerTarget": "wxy-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "wxy-app"
 }
